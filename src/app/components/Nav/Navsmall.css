@@ -1,0 +1,68 @@
+.navsmall{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .navsmall{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        border-bottom: 1px solid #ffffff49;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .navsmall>a>img{
+        width: 150px;
+    }
+    .hamburgar{
+        font-size: 30px;
+        color: var(--text-color-2);
+        cursor: pointer;
+    }
+    .menu{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--hover);
+        position: fixed;
+        transition: 0.5s;
+        top: 0;
+        z-index: 100;
+        overflow-y: hidden;
+        display: block;
+    }
+    .menunav{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        border-bottom: 1px solid #ffffff49;
+        align-items: center;
+        justify-content: end;
+        padding: 0 5%;
+        font-size: 30px;
+        color: var(--text-color-2);
+        cursor: pointer;
+    }
+    .menu>ul{
+        padding: 2% 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: var(--text-color-2);
+    }
+    .menu-dropdown>a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .menu-dropdown-element{
+        padding: 2% 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,44 @@
+.coolBeans {
+    color: var(--text-color-2);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--hover);
+    overflow: hidden;
+    padding: 1% 2%;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .coolBeans::after {
+    background-color: var(--text-color);
+    border-radius: 0;
+    content: '';
+    display: block;
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 20%) rotate(-45deg);
+    transform-origin: bottom left;
+    transition: 0.5s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  
+  .coolBeans:hover::after {
+    transform: translate(0, 0);
+    border-radius: 0;
+  }
+  
+  .coolBeans:hover {
+    transform: scale(1);
+    will-change: transform;
+  }
+  
