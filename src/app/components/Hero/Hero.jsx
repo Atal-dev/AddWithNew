@@ -1,8 +1,12 @@
+'use client'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Hoverbtn from "../Hoverbtn/Hoverbtn";
 import "./Hero.css"
+import { useEffect } from "react";
+import { gsap } from "gsap";
 
 function Hero() {
+  
   return (
     <section className="herosection">
         <div className="herosection-inner">
