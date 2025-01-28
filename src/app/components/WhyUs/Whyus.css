@@ -1,0 +1,120 @@
+.containerWhy {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .containerWhy .left-section {
+    /* flex: 1; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  
+  .left-section .sub-heading {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+  }
+  
+  .left-section .heading {
+    font-size: 42px;
+    color: #333;
+  }
+  
+  .left-section .heading .highlight {
+    color: #9aa88e;
+  }
+  
+  .left-section .description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .left-section .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .left-section .feature:hover img{
+    background-color: #9aa88e;
+  }
+  
+  .left-section .feature img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 15px;
+    border: 1px solid #666;
+  }
+  
+  .left-section .feature div {
+    flex: 1;
+  }
+  
+  .left-section .feature h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .left-section .feature p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+    padding-top: 10px;
+  }
+  
+  .containerWhy .right-section {
+    width: 50%;
+    margin: auto;
+  }
+  .right-section .image-containerWhy{
+    display: flex;
+    width: 100%;
+  }
+  .right-section .image-containerWhy img {
+    margin: 0 2% 2% 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .right-section .image-containerWhy .img1{
+    width: 58%;
+  }
+  .right-section .image-containerWhy .img2{
+    width: 38%;
+  }
+  .right-section .image-containerWhy .img3{
+    width: 68%;
+  }
+  .right-section .image-containerWhy .img4{
+    width: 28%;
+  }
+  
+  @media (max-width: 1024px) {
+    .containerWhy {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .containerWhy .right-section {
+    width: 100%;
+    }
+
+    .containerWhy .left-section {
+      width: 100%;
+      }
+  }
+
+
+
+  

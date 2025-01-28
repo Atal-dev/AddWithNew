@@ -1,0 +1,15 @@
+/* Positioning the circle at the top-left corner initially */
+.cursor-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    pointer-events: none; /* Prevents circle from interfering with clicks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translate(-50%, -50%); /* Centers the circle */
+  }
+  
