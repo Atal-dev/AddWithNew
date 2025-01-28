@@ -18,3 +18,65 @@ body {
   background-color: var(--background);
   font-family: "Hanken Grotesk", serif;
 }
+
+
+.shineimg{
+  position: relative;
+  overflow: hidden;
+}
+
+.shineimg::before{
+  position: absolute;
+	top: -25%;
+	left: 40%;
+  rotate: 45deg;
+	z-index: 0;
+	content: '';
+	width: 20%;
+	height: 150%;
+	background:rgba(255,255,255,.3);
+  opacity: 0;
+}
+
+
+.shineimg:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 0.75;
+  }
+  50%{
+    opacity: 0.50;
+  }
+  75%{
+    opacity: 0.25;
+  }
+	100% {
+		scale: 7;
+    opacity: 0.1;
+	}
+  
+}
+@keyframes shine {
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 0.75;
+  }
+  50%{
+    opacity: 0.50;
+  }
+  75%{
+    opacity: 0.25;
+  }
+	100% {
+		scale: 7;
+    opacity: 0.1;
+	}
+}

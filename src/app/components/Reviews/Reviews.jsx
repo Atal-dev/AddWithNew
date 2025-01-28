@@ -55,11 +55,11 @@ const TestimonialLayout = () => {
           {/* Left side - Image */}
           <div className="w-full h-full">
             <div className="relative aspect-square bg-[#4A5B4A]">
-              <div className="w-full h-full relative">
+              <div className="w-full h-full relative shineimg" >
                 <img 
                   src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/testimonial-img.jpg" 
                   alt="Modern living room" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                 />
               </div>
             </div>
