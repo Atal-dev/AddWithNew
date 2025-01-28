@@ -1,0 +1,187 @@
+.portfolio {
+    font-family: Arial, sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .portfolio .portfolio-header {
+    text-align: center;
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .portfolio .portfolio-header .projecthead{
+    width: 45%;
+  }
+  .portfolio .portfolio-header .projectdes{
+    width: 45%;
+    margin: auto 0;
+  }
+  .portfolio .portfolio-header h1 {
+    font-size: 42px;
+    margin: 0;
+  }
+  .portfolio .portfolio-header h1 span{
+    color: #9aa88e;
+  }
+  
+  .portfolio .portfolio-header p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Category Buttons */
+  .portfolio .categories {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio .categories button {
+    position: relative; 
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease; 
+    overflow: hidden; 
+  }
+  
+  .categories button::before,
+  .categories button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0; 
+    height: 3px; 
+    background-color: #9aa88e; 
+    transition: width 0.7s ease; 
+  }
+  
+  .categories button::before {
+    top: 0; 
+  }
+  
+  .categories button::after {
+    bottom: 0; 
+  }
+  
+  .categories button:hover::before,
+  .categories button:hover::after,
+  .categories button.active::before,
+  .categories button.active::after {
+    width: 100%; 
+  }
+  
+  
+  
+  .portfolio .projects {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .portfolio .projects .project {
+    position: relative;
+    height: 200px; 
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 48%;
+    height: 500px;
+
+  }
+  .projects .project .transparent{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #33333379;
+  }
+  .project .transparent .transArrow{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cccccc79;
+    filter: blur(1px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+ .transparent .transArrow .icon{
+    rotate: 325deg;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+
+  }
+  .project:hover .transArrow{
+    display: flex;
+  }
+  .transparent .transArrow:hover{
+    background-color: #9aa88e;
+  } 
+  .transArrow:hover .icon{
+    rotate: 0deg;
+  }
+  
+  .project .project-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 20px;
+    text-align: start;
+  }
+  
+  .project .project-content h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  
+  .project .project-content h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  @media (max-width:768px){
+    .portfolio .projects {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .portfolio .projects .project{
+        width: 100%;
+      }
+  }
+
+  @media(max-width:1024px){
+    .portfolio .portfolio-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio .portfolio-header .projecthead{
+        width: 100%;
+      }
+     .portfolio .portfolio-header .projectdes{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+  }
