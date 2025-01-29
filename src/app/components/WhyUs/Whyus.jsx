@@ -45,13 +45,21 @@ const Whyus = () => {
         </div>
       </div>
       <div className="right-section">
-        <div className="image-containerWhy">
-          <img className="img1" src="https://th.bing.com/th/id/R.ae06de3a787fde8aa4db7040debcfea6?rik=kk9dek1j%2fsuARg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fInteriorWallpapers-38.jpg&ehk=%2bQFcGPsFKODFqNmUPTIYv%2b9No7I1Lz136blDVnY9wf0%3d&risl=&pid=ImgRaw&r=0" alt="Room 1" />
-          <img className="img2" src="https://www.mmarchitecturalphotography.com/chicago-architectural-photographer/uploads/2016/01/clarendon-hills-luxury-home-interior.jpg" alt="Room 2" />
+        <div className="image-containerWhy ">
+          <span className="img1 shineimg">       
+               <img className="" src="https://th.bing.com/th/id/R.ae06de3a787fde8aa4db7040debcfea6?rik=kk9dek1j%2fsuARg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fInteriorWallpapers-38.jpg&ehk=%2bQFcGPsFKODFqNmUPTIYv%2b9No7I1Lz136blDVnY9wf0%3d&risl=&pid=ImgRaw&r=0" alt="Room 1" />
+          </span>
+          <span className="img2 shineimg">
+               <img className="" src="https://www.mmarchitecturalphotography.com/chicago-architectural-photographer/uploads/2016/01/clarendon-hills-luxury-home-interior.jpg" alt="Room 2" />
+          </span>
         </div>
-        <div className="image-containerWhy">
-          <img className="img3" src="https://www.fashiondivadesign.com/wp-content/uploads/2018/12/pexels-photo-1571460-1.jpeg" alt="Room 3" />
-          <img className="img4" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png" alt="Room 4" />
+        <div className="image-containerWhy ">
+          <span className="img3 shineimg"> 
+          <img className="" src="https://www.fashiondivadesign.com/wp-content/uploads/2018/12/pexels-photo-1571460-1.jpeg" alt="Room 3" />
+          </span>
+          <span className="img4 shineimg">
+          <img className="" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png" alt="Room 4" />
+          </span>
         </div>
       </div>
     </section>

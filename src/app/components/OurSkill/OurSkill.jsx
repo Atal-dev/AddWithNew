@@ -72,26 +72,26 @@ const SkillsSection = () => {
 
         {/* Images Grid */}
         <div className="flex-1 mb-12 grid grid-cols-2 gap-4 relative  OurSkill-images">
-          <div className="space-y-4">
+          <div className="space-y-4 z-1 shineimg">
             <img
               src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/our-skill-img-1.jpg"
               alt="Interior design"
-              className="OurSkill-img1 w-full h-96 object-cover "
+              className="OurSkill-img1 w-full h-100 object-cover "
             />
             
           </div>
-          <div className='pt-3'>
+          <div className='pt-3 z-2 shineimg'>
             <img
               src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/our-skill-img-2.jpg"
               alt="Interior design"
-              className="OurSkill-img2 h-56 object-cover"
+              className="OurSkill-img2 h-100 object-cover"
             />
           </div>
-          <div className="OurSkill-img3 relative">
+          <div className="OurSkill-img3 relative z-5 shineimg">
             <img
               src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/our-skill-img-3.jpg"
               alt="Interior design"
-              className=" h-80 object-cover shadow-lg absolute top-[-180px] left-60"
+              className=" h-100 object-cover shadow-lg absolute top-[-180px] left-60"
             />
           </div>
         </div>

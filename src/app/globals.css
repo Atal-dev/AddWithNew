@@ -30,7 +30,7 @@ body {
 	top: -25%;
 	left: 40%;
   rotate: 45deg;
-	z-index: 0;
+	z-index: 1;
 	content: '';
 	width: 20%;
 	height: 150%;

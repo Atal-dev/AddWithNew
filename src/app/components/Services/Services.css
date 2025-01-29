@@ -1,13 +1,14 @@
-.portfolio {
+.services {
     font-family: Arial, sans-serif;
     max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom: 150px;
     width: 100%;
     margin: 0 auto;
   }
   
-  .portfolio .portfolio-header {
+  .services .services-header {
     text-align: center;
     display: flex;
     text-align: start;
@@ -15,32 +16,32 @@
     width: 100%;
   }
   
-  .portfolio .portfolio-header .projecthead{
+  .services .services-header .services_itemhead{
     width: 45%;
     font-size: 18px;
     color: #666;
   }
-  .portfolio .portfolio-header .projectdes{
+  .services .services-header .services_itemdes{
     width: 45%;
     margin: auto 0;
     font-size: 18px;
     color: #666;
   }
-  .portfolio .portfolio-header h1 {
+  .services .services-header h1 {
     font-size: 42px;
     font-weight: 700;
   }
-  .portfolio .portfolio-header h1 span{
+  .services .services-header h1 span{
     color: #9aa88e;
   }
   
-  .portfolio .portfolio-header p {
+  .services .services-header p {
     font-size: 18px;
     margin: 10px 0;
   }
   
   /* Category Buttons */
-  .portfolio .categories {
+  .services .categories {
     margin: 40px 0;
     display: flex;
     justify-content: center;
@@ -48,7 +49,7 @@
     flex-wrap: wrap;
   }
   
-  .portfolio .categories button {
+  .services .categories button {
     position: relative; 
     padding: 10px 10px;
     border: none;
@@ -88,37 +89,38 @@
   
   
   
-  .portfolio .projects {
+  .services .services_items {
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     justify-content: space-between;
+    padding: 40px 0;
   }
   
-  .portfolio .projects .project {
+  .services .services_items .services_item {
     position: relative;
     height: 200px; 
     border: 1px solid #ddd;
     overflow: hidden;
-    width: 48%;
-    height: 500px;
+    width: 31%;
+    height: 600px;
 
   }
-  .projects .project .transparent{
+  .services_items .services_item .transparent{
     position: relative;
     height: 100%;
     width: 100%;
     background-color: #33333379;
   }
-  .project .transparent .transArrow{
-    height: 100px;
-    width: 100px;
+  .services_item .transparent .transArrow{
+    height: 70px;
+    width: 70px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20px;
+    right: 20px;
+    /* transform: translate(-50%, -50%); */
     background-color: #cccccc79;
     /* filter: blur(1px); */
     border-radius: 50%;
@@ -135,7 +137,7 @@
     transition: color 0.3s ease; 
 
   }
-  .project:hover .transArrow{
+  .services_item:hover .transArrow{
     display: flex;
   }
   .transparent .transArrow:hover{
@@ -145,7 +147,7 @@
     rotate: 0deg;
   }
   
-  .project .project-content {
+  .services_item .services_item-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -155,36 +157,43 @@
     text-align: start;
   }
   
-  .project .project-content h2 {
+  .services_item .services_item-content h2 {
     font-size: 25px;
     margin: 0 0 10px 0;
   }
   
-  .project .project-content h3 {
+  .services_item .services_item-content h3 {
     font-size: 16px;
     margin: 0;
   }
 
+
+  .allservicebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (max-width:768px){
-    .portfolio .projects {
+    .services .services_items {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
       }
-      .portfolio .projects .project{
+      .services .services_items .services_item{
         width: 100%;
       }
   }
 
   @media(max-width:1024px){
-    .portfolio .portfolio-header{
+    .services .services-header{
         display: flex;
         flex-direction: column;
     }
-    .portfolio .portfolio-header .projecthead{
+    .services .services-header .services_itemhead{
         width: 100%;
       }
-     .portfolio .portfolio-header .projectdes{
+     .services .services-header .services_itemdes{
         width: 100%;
         padding-top: 20px;
     }
