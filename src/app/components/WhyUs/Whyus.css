@@ -18,14 +18,14 @@
   }
   
   .left-section .sub-heading {
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
     text-transform: uppercase;
   }
   
   .left-section .heading {
     font-size: 42px;
-    color: #333;
+    font-weight: 700;
   }
   
   .left-section .heading .highlight {
@@ -33,7 +33,7 @@
   }
   
   .left-section .description {
-    font-size: 16px;
+    font-size: 18px;
     color: #666;
     line-height: 1.6;
   }
@@ -83,9 +83,12 @@
     width: 100%;
   }
   .right-section .image-containerWhy img {
-    margin: 0 2% 2% 0;
+    /* margin: 0 2% 2% 0; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    padding: 1%;
   }
   .right-section .image-containerWhy .img1{
     width: 58%;
@@ -99,6 +102,9 @@
   .right-section .image-containerWhy .img4{
     width: 28%;
   }
+  /* .right-section .image-containerWhy img{
+   
+  } */
   
   @media (max-width: 1024px) {
     .containerWhy {

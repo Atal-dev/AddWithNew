@@ -54,16 +54,11 @@ function About() {
       <section className='addabout'>
   {/* Left Section */}
   <div className="left-sectionabout">
-    <div className="image-container1">
+    <div className="image-container1 shineimg">
       <img src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/about-img-1.jpg" alt="Living Room 1" />
-      <div className="circle-badge">15+ <br /> Years of experience</div>
     </div>
-    <div className="image-container2">
+    <div className="image-container2 shineimg">
       <img src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/about-img-2.jpg" alt="Living Room 2" />
-      <div className='circle-badge2'>
-      <div className="dark">95%</div>
-      <p>Positive feedback</p>
-      </div>
     </div>
   </div>
 

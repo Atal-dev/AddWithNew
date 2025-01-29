@@ -102,7 +102,7 @@ const Portfolio = () => {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="project"
+            className="project shineimg"
             style={{
               backgroundImage: `url(${project.image})`,
               backgroundSize: 'cover',

@@ -6,8 +6,9 @@ import Projects from "./components/Projects/Projects"
 import WhyUs from "./components/WhyUs/Whyus"
 import CursorFollower from "./components/CursorFollower/CursorFollower";
 import About from "./components/About/About";
-import SkillsSection from "./components/OurSkill/OurSkill";
-import TestimonialLayout from "./components/Reviews/Reviews";
+import OurSkill from "./components/OurSkill/OurSkill"
+import Reviews from "./components/Reviews/Reviews"
+import Services from "./components/Services/Services"
 
 
 export default function Home() {
@@ -19,8 +20,9 @@ export default function Home() {
      <About/>
      <WhyUs/>
      <Projects/>
-     <SkillsSection/>
-     <TestimonialLayout/>
+     <OurSkill/>
+     <Services/>
+     <Reviews/>
      <Footer/>
     </>
   );

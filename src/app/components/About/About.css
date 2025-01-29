@@ -10,6 +10,8 @@
 .left-sectionabout{
     width: 45%;
     /* margin: 0 auto; */
+    /* background-color: red; */
+    background: transparent;
 
 }
 .right-sectionabout{
@@ -21,6 +23,7 @@
 .image-container1 {
     position: relative;
     width: 80%;
+    z-index: 1;
   }
 
   .image-container1 img ,.image-container2 img{
@@ -36,58 +39,7 @@
     /* right: ; */
     /* left: 0px; */
     width: 60%;
-  }
-
-  .circle-badge {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    border: 5px solid #fff;
-    font-size: 20px;
-    background-color: #254230;
-    width: 160px;
-    height: 160px;
-    top: 230px;
-    left: 120px;
-    z-index: 9;
-  }
-  .circle-badge2{
-    position: absolute;
-    top: -150px;
-    left: 200px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* justify-content: center; */
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    /* border: 5px solid #fff; */
-    font-size: 20px;    
-    rotate: 270deg;
-    width: 200px;
-  }
-
-  
-  .circle-badge2>.dark {
-    background-color: #254230;
-     width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: relative; */
-  }
-  .circle-badge2>p{
-    color: #254230;
-    position: relative;
-    font-size: 15px;
+    z-index: 2;
   }
   
   @media (max-width:1024px){
@@ -101,27 +53,6 @@
     }
     .right-sectionabout{
       width: 90%;
-    }
-    .circle-badge{
-      position: absolute;
-      top: 400px;
-    }
-  }
-  @media (max-width:768px){
-    .circle-badge{
-      position: absolute;
-      top: 200px;
-    }
-
-  }
-  @media (max-width:500px){
-    .circle-badge2{
-      display: none;
-    }
-    .circle-badge{
-      position: absolute;
-      top: 200px;
-      left: 50px;
     }
   }
 
