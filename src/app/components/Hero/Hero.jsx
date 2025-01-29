@@ -1,12 +1,12 @@
 'use client'
-import { FaArrowRightLong } from "react-icons/fa6";
-import Hoverbtn from "../Hoverbtn/Hoverbtn";
+
+
 import "./Hero.css"
-import { useEffect, useState } from "react";
+import { Children, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import SplitText from "../SplitText/SplitText";
 
-function Hero() {
+function Hero({children , height}) {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -28,23 +28,8 @@ function Hero() {
   const backgroundPosition = `center ${scrollY * -0.2}px`;
   
   return (
-    <section className="herosection" style={{ backgroundPosition: backgroundPosition,}}>
-        <div className="herosection-inner">
-            <h1><FaArrowRightLong /> Inspired Interiors</h1>
-            <SplitText
-              text="Designing your dream spaces, one room at a time"
-              className="hero-h2"
-              delay={50}
-            />
-            {/* <h2>Designing your dream spaces, one room at a time</h2> */}
-            <p>We specialixe in creating personalized, fuctional, and stylish interiors that reflect your unique vision</p>
-            <div>
-                <Hoverbtn name='Explore More' />
-                <Hoverbtn name='View Projects' />
-            </div>
-            
-        </div>
-        
+    <section className="herosection" style={{ backgroundPosition: backgroundPosition,height:height}}>
+        {children} 
     </section>
   )
 }
