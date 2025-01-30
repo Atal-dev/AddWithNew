@@ -6,7 +6,7 @@
   --primary-color: #3498db; 
   --secondary-color: #2ecc71;
   --background: #ffffff;
-  --text-color: #333333;
+  --text-color: #192324;
   --text-color-2: #ffffff;
   --hover:#7c877f;
 }
@@ -43,6 +43,26 @@ body {
 	-webkit-animation: shine .75s;
 	animation: shine .75s;
 }
+
+/* .main-heading{
+  font-size: 16px;
+  display: flex;
+  align-items: center ;
+  line-height: 26px;
+  color: var(--hover);
+  font-weight: 500;
+}
+.sub-heading{
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 51;
+  color: var(--text-color);
+}
+.sub-heading .different-color{
+  color: var(--hover);
+} */
+
+
 @-webkit-keyframes shine {
   0%{
     opacity: 1;

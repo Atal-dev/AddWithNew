@@ -1,13 +1,32 @@
+'use client'
 import React from "react";
 import "./Whyus.css";
+import SplitText from "../SplitText/SplitText";
+import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const Whyus = () => {
+  gsapFadeUpAnimation(".sub-heading");
+  gsapFadeUpAnimation(".description");
+  gsapFadeUpAnimation(".feature");
+  gsapFadeUpAnimation(".image-containerWhy");
+
+
   return (
     <section className="containerWhy">
       <div className="left-section">
         <p className="sub-heading">Why Choose Us</p>
+        <SplitText
+              text="A behind the scenes look at"
+              delay={50}
+              className="heading"
+        />
         <h2 className="heading">
-          A behind the scenes look at <span className="highlight">our agency</span>
+           <span className="highlight">our agency</span>
         </h2>
         <p className="description">
           From concept to completion, discover how we bring your vision to life

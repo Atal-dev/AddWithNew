@@ -1,11 +1,24 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Projects.css'; 
 import { FaArrowRight } from "react-icons/fa";
+import SplitText from '../SplitText/SplitText';
+import gsap from 'gsap';
+import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const Portfolio = () => {
+  gsapFadeUpAnimation(".projecthead p");
+  gsapFadeUpAnimation(".projectdes");
+  gsapFadeUpAnimation(".categories");
+  gsapFadeUpAnimation(".project");
+
+
   const projectsData = [
     {
       id: 1,
@@ -57,7 +70,12 @@ const Portfolio = () => {
       <div className="portfolio-header">
         <div className='projecthead'>
         <p>Latest Project</p>
-        <h1>Creative projects that define <span>our style</span> </h1>
+        <SplitText
+              text="Creative projects that define our style"
+              delay={50}
+              className="heading"
+        />
+       
         </div>
         
         <div className='projectdes'>Our portfolio showcases a diverse range of projects, from beautifully crafted residential spaces to functional and stylish commercial interiors.</div>
