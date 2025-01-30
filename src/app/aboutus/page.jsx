@@ -1,5 +1,4 @@
 import React from "react";
-import './aboutStyle.css'
 import Navbar from "../components/Nav/Navbar";
 import Team from "../components/Team/Team";
 import About from "../components/About/About";
@@ -8,6 +7,7 @@ import Hero from "../components/Hero/Hero";
 import Footer from "../Footer/Footer";
 import VisionMission from "../components/VisionMission/VisionMission";
 import BestSelling from "../components/BestSelling/BestSelling";
+import AskedQuestion from '../components/AskedQuestion/AskedQuestion'
 
 function Aboutus() {
  
@@ -26,6 +26,7 @@ function Aboutus() {
         <BestSelling/>
         <Reviews />
         <Team />
+        <AskedQuestion/>
       <Footer />
     </>
   );
