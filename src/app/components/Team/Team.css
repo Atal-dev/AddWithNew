@@ -117,12 +117,29 @@
     font-size: 16px;
     margin: 0;
   }
-
-
-  .allservicebtn{
+  .social-icon{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* font-size: 30px; */
+    padding-top: 20px;
+  }
+  .social-icon .icon{
+    border-radius: 50%;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    color: #666;
+    cursor: pointer;
+  }
+  .social-icon .icon:hover{
+    background-color: #666;
+    color: #fff;
   }
 
   @media (max-width:768px){
