@@ -51,7 +51,7 @@ const TestimonialLayout = () => {
       <div className="w-full flex flex-col justify-between items-center md:flex-row">
         {/* Left side - Image */}
         <div className="w-full h-full">
-          <div className="relative w-full h-full bg-gray-200">
+          <div className="relative w-full h-full bg-gray-200 shineimg">
             <img 
               src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/testimonial-img.jpg" 
               alt="Modern living room" 

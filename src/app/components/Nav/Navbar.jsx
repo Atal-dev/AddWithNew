@@ -34,7 +34,7 @@ export default function Navbar() {
                     <Link href="/aboutus" className={isActive('/about-us') ? 'activelink' : ''} >About Us</Link>
                 </li>
                 <li>
-                    <Link href="/" className={isActive('/services') ? 'activelink' : ''} >Services</Link>
+                    <Link href="/services" className={isActive('/services') ? 'activelink' : ''} >Services</Link>
                 </li>
                 <li>
                     <Link href="/" className={isActive('/projects') ? 'activelink' : ''} >Projects</Link>
