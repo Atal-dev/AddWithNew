@@ -4,49 +4,19 @@ import './About.css'
 import Hoverbtn from '../Hoverbtn/Hoverbtn'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitText from '../SplitText/SplitText'
+import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 function About() {
-
-  useEffect(()=>{
-      gsap.from(".about-h2" , {
-        translateY:"50px",
-        opacity:0,
-        duration:2,
-        scrollTrigger:".about-h2"
-
-      })
-      gsap.from(".bottom_content" , {
-        translateY:"50px",
-        opacity:0,
-        duration:2,
-        scrollTrigger:".about-h2"
-
-      })
-      gsap.from(".about-p" , {
-        translateY:"50px",
-        opacity:0,
-        duration:2,
-        scrollTrigger:".about-h2"
-
-      })
-      gsap.from(".image-container1" , {
-        translateY:"50px",
-        opacity:0,
-        duration:2,
-        scrollTrigger:".about-h2"
-      })
-      gsap.from(".image-container2" , {
-        translateY:"50px",
-        opacity:0,
-        duration:2,
-        scrollTrigger:".about-h2"
-      })
-  },[])
-
+  gsapFadeUpAnimation(".bottom_content");
+  gsapFadeUpAnimation(".about-h2");
+  gsapFadeUpAnimation(".about-p");
+  gsapFadeUpAnimation(".image-container1");
+  gsapFadeUpAnimation(".image-container2");
 
   return (
     <>
@@ -65,7 +35,11 @@ function About() {
   {/* Right Section */}
   <div className="right-sectionabout">
     <p>About Us</p>
-    <h2 className='about-h2'>Our passion for design, your <span>vision realized</span></h2>
+            <SplitText
+              text="Our passion for design, your"
+              delay={50}
+            />
+    <h2 className='about-h2'> <span>vision realized</span></h2>
     <p className='about-p'>
       Our dedicated team of designers works closely with you to understand your
       vision and bring it to life with thoughtful attention to detail. Whether
@@ -79,6 +53,7 @@ function About() {
     </ul>
     <div className='button_about'>
     <Hoverbtn name ='Read' width='100px' /> 
+    <Hoverbtn name ={'Read More'} /> 
     </div>
     </div>
 

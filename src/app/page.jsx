@@ -20,7 +20,7 @@ export default function Home() {
      <Navbar/>
      <Hero height={"120vh"}>
         <div className="herosection-inner">
-            <h1><FaArrowRightLong /> Inspired Interiors</h1>
+            <h1><FaArrowRightLong /> Addwith Interiors</h1>
             <SplitText
               text="Designing your dream spaces, one room at a time"
               className="hero-h2"
