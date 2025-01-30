@@ -63,6 +63,7 @@ body {
   font-weight: 700;
   line-height: 51px;
   color: var(--hover);
+  display: inline;
 }
 .sub-decription{
   font-size: 16px;

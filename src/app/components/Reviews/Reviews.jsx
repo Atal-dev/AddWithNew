@@ -2,8 +2,18 @@
 import React, { useState, useEffect } from 'react';
 import { Star, ArrowRight } from 'lucide-react';
 import SplitText from '../SplitText/SplitText';
+import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const TestimonialLayout = () => {
+  gsapFadeUpAnimation(".testmonialimg");
+
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [count, setCount] = useState(0);
 
@@ -51,8 +61,8 @@ const TestimonialLayout = () => {
     <div className="w-full py-2 pb-[150px] flex">
       <div className="w-full flex flex-col justify-between  md:flex-row ">
         {/* Left side - Image */}
-        <div className="w-full h-full">
-          <div className="relative w-full h-full bg-gray-200">
+        <div className="w-full h-full testmonialimg">
+          <div className="relative w-full shineimg h-full bg-gray-200">
             <img 
               src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/testimonial-img.jpg" 
               alt="Modern living room" 

@@ -27,18 +27,9 @@
     font-size: 18px;
     color: #666;
   }
-  .services .services-header h1 {
-    font-size: 42px;
-    font-weight: 700;
-  }
-  .services .services-header h1 span{
-    color: #9aa88e;
-  }
+ 
+ 
   
-  .services .services-header p {
-    font-size: 18px;
-    margin: 10px 0;
-  } 
   
   .services .services_items {
     display: flex;

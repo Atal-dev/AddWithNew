@@ -36,10 +36,10 @@ export default function Home() {
         </div>
      </Hero>
      <About/>
+     <Services/>
      <WhyUs/>
      <Projects/>
      <OurSkill/>
-     <Services/>
      <Reviews/>
      <Footer/>
     </>

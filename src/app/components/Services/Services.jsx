@@ -4,9 +4,25 @@ import React, { useState } from 'react';
 import './Services.css'; 
 import { FaArrowRight } from "react-icons/fa";
 import Hoverbtn from '../Hoverbtn/Hoverbtn';
+import SplitText from '../SplitText/SplitText';
+import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const Services = () => {
+    gsapFadeUpAnimation(".main-heading");
+    gsapFadeUpAnimation(".different-color-main-decription");
+    gsapFadeUpAnimation(".sub-decription");
+    gsapFadeUpAnimation(".services_items");
+    gsapFadeUpAnimation(".allservicebtn");
+
+
+
     const services_itemsData = [
         {
           id: 1,
@@ -33,11 +49,18 @@ const Services = () => {
     <div className="services">
       <div className="services-header">
         <div className='services_itemhead'>
-        <p>Our Services</p>
-        <h1>Innovative design services for <span>every need</span> </h1>
+        <h1 className='main-heading'>Our Services</h1>
+        <SplitText
+              text="Innovative design services for "
+              delay={50}
+              className="main-decription"
+        />
+        <h2 className='different-color-main-decription'>every need </h2>
         </div>
         
-        <div className='services_itemdes'>We offer a range of bespoke interior design services tailored to your unique needs. From concept development to final installation.</div>
+        <div className='services_itemdes sub-decription'>
+          We offer a range of bespoke interior design services tailored to your unique needs. From concept development to final installation.
+        </div>
       </div>
 
       {/* Display Filtered services_items */}
