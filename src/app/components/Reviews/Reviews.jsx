@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Star, ArrowRight } from 'lucide-react';
+import SplitText from '../SplitText/SplitText';
 
 const TestimonialLayout = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -47,8 +48,8 @@ const TestimonialLayout = () => {
   }, []);
 
   return (
-    <div className="w-full  py-2 pb-[150px] flex">
-      <div className="w-full flex flex-col justify-between items-center md:flex-row">
+    <div className="w-full py-2 pb-[150px] flex">
+      <div className="w-full flex flex-col justify-between  md:flex-row ">
         {/* Left side - Image */}
         <div className="w-full h-full">
           <div className="relative w-full h-full bg-gray-200">
@@ -61,14 +62,19 @@ const TestimonialLayout = () => {
         </div>
 
         {/* Right side - Testimonials */}
-        <div className="w-full space-y-12 flex flex-col justify-around p-5">
+        <div className="w-full space-y-12 flex flex-col justify-around p-5 pl-20">
           <div>
-            <div className='flex items-center gap-2 text-gray-600'>
+            <div className='flex items-center gap-2'>
               <ArrowRight className="w-5 h-5" />
-              <p>Client Testimonials</p>
+              <h1 className='main-heading'>Client Testimonials</h1>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2">
-              Trusted by thousands of <span className="text-[#9aa88e]">people & companies.</span>
+            <SplitText
+              text="Trusted by thousands of"
+              delay={50}
+              className="main-decription"
+            />
+            <h2 className="different-color-main-decription">
+             people & companies.
             </h2>
           </div>
 
@@ -79,12 +85,12 @@ const TestimonialLayout = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0">
-                  <div className="flex mb-4 text-yellow-500">
+                  <div className="flex mb-4 text-black">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-current" />
+                      <Star key={i} className="w-7 h-7 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-6">{testimonial.text}</p>
+                  <p className="sub-decription mb-6 w-2/3 ">{testimonial.text}</p>
                   <div className="flex items-center">
                     <img 
                       src={testimonial.image} 

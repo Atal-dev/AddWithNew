@@ -44,7 +44,7 @@ body {
 	animation: shine .75s;
 }
 
-/* .main-heading{
+.main-heading{
   font-size: 16px;
   display: flex;
   align-items: center ;
@@ -52,15 +52,24 @@ body {
   color: var(--hover);
   font-weight: 500;
 }
-.sub-heading{
+.main-decription{
   font-size: 46px;
   font-weight: 700;
-  line-height: 51;
+  line-height: 51px;
   color: var(--text-color);
 }
-.sub-heading .different-color{
+.different-color-main-decription{
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 51px;
   color: var(--hover);
-} */
+}
+.sub-decription{
+  font-size: 16px;
+  font-weight: 400;
+  color: #283132;
+  line-height: 27px;
+}
 
 
 @-webkit-keyframes shine {

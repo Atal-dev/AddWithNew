@@ -52,8 +52,7 @@ function About() {
       <li><span>✔</span> Client-centered approach</li>
     </ul>
     <div className='button_about'>
-    <Hoverbtn name ='Read' width='100px' /> 
-    <Hoverbtn name ={'Read More'} /> 
+    <Hoverbtn name ={'Read More'}  width='150px'/> 
     </div>
     </div>
 
