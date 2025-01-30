@@ -1,4 +1,4 @@
-.services {
+.team {
     font-family: Arial, sans-serif;
     max-width: 1300px;
     margin: 0 auto;
@@ -8,7 +8,7 @@
     margin: 0 auto;
   }
   
-  .services .services-header {
+  .team .team-header {
     text-align: center;
     display: flex;
     text-align: start;
@@ -16,31 +16,31 @@
     width: 100%;
   }
   
-  .services .services-header .services_itemhead{
+  .team .team-header .team_itemhead{
     width: 45%;
     font-size: 18px;
     color: #666;
   }
-  .services .services-header .services_itemdes{
+  .team .team-header .team_itemdes{
     width: 45%;
     margin: auto 0;
     font-size: 18px;
     color: #666;
   }
-  .services .services-header h1 {
+  .team .team-header h1 {
     font-size: 42px;
     font-weight: 700;
   }
-  .services .services-header h1 span{
+  .team .team-header h1 span{
     color: #9aa88e;
   }
   
-  .services .services-header p {
+  .team .team-header p {
     font-size: 18px;
     margin: 10px 0;
   } 
   
-  .services .services_items {
+  .team .team_items {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -49,7 +49,7 @@
     padding: 40px 0;
   }
   
-  .services .services_items .services_item {
+  .team .team_items .team_item {
     position: relative;
     height: 200px; 
     border: 1px solid #ddd;
@@ -58,13 +58,13 @@
     height: 600px;
   }
  
-  .services_items .services_item .transparent{
+  .team_items .team_item .transparent{
     position: relative;
     height: 100%;
     width: 100%;
     background-color: #33333379;
   }
-  .services_item .transparent .transArrow{
+  .team_item .transparent .transArrow{
     height: 70px;
     width: 70px;
     position: absolute;
@@ -87,7 +87,7 @@
     transition: color 0.3s ease; 
 
   }
-  .services_item:hover .transArrow{
+  .team_item:hover .transArrow{
     display: flex;
   }
  
@@ -98,7 +98,7 @@
     rotate: 0deg;
   }
   
-  .services_item .services_item-content {
+  .team_item .team_item-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -108,43 +108,60 @@
     text-align: start;
   }
   
-  .services_item .services_item-content h2 {
+  .team_item .team_item-content h2 {
     font-size: 25px;
     margin: 0 0 10px 0;
   }
   
-  .services_item .services_item-content h3 {
+  .team_item .team_item-content h3 {
     font-size: 16px;
     margin: 0;
   }
-
-
-  .allservicebtn{
+  .social-icon{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* font-size: 30px; */
+    padding-top: 20px;
+  }
+  .social-icon .icon{
+    border-radius: 50%;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    color: #666;
+    cursor: pointer;
+  }
+  .social-icon .icon:hover{
+    background-color: #666;
+    color: #fff;
   }
 
   @media (max-width:768px){
-    .services .services_items {
+    .team .team_items {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
       }
-      .services .services_items .services_item{
+      .team .team_items .team_item{
         width: 100%;
       }
   }
 
   @media(max-width:1024px){
-    .services .services-header{
+    .team .team-header{
         display: flex;
         flex-direction: column;
     }
-    .services .services-header .services_itemhead{
+    .team .team-header .team_itemhead{
         width: 100%;
       }
-     .services .services-header .services_itemdes{
+     .team .team-header .team_itemdes{
         width: 100%;
         padding-top: 20px;
     }

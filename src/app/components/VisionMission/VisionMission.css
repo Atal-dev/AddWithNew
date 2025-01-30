@@ -1,0 +1,95 @@
+
+  
+  .visionmission {
+    width: 100%;
+    /* padding: 0 2rem; */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .visionmission .vmhead{
+    background-color: rgb(36, 35, 35);
+    width: 100%;
+    min-height: 500px;
+    color: #fff;
+    padding: 10% 8%;
+  }
+  .visionmission .vmhead p{
+    font-size: 18px;
+    /* color: #666; */
+  }
+  .visionmission .vmhead .vmheadtxt{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .vmhead .vmheadtxt h2{
+    width: 45%;
+    font-size: 42px;
+    font-weight: 700; 
+ }
+ .vmhead .vmheadtxt h2 span{
+    color: #9aa88e;
+ }
+  .vmhead .vmheadtxt p{
+    width: 45%;
+  }
+ 
+  
+  .contentContainer {
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.174);
+}
+
+  .contentContainer h3{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .contentContainer p{
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+  }
+  
+  .vision,
+  .mission {
+    flex: 1 1 40%; 
+    padding: 20px;
+  }
+
+  .contentContainer .vision .vlogo ,.contentContainer .mission .mlogo{
+    font-size: 35px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #9aa88e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 35, 35);
+
+  }
+  .contentContainer .vision:hover .vlogo , .contentContainer .mission:hover .mlogo{
+    background-color: rgb(36, 35, 35);
+    color: #fff;
+}
+  
+  
+  @media (max-width: 1024px) {
+    .contentContainer {
+      flex-direction: column;
+    }
+    .visionmission .vmhead .vmheadtxt{
+        flex-direction: column;
+    }
+    .vmhead .vmheadtxt p,   .vmhead .vmheadtxt h2{
+        width: 100%;
+    }
+  }

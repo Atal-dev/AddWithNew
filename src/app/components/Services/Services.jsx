@@ -64,7 +64,7 @@ const Services = () => {
         ))}
       </div>
       <div className='allservicebtn'>
-      <Hoverbtn name={'See All Services'}/>
+      <Hoverbtn name={'See All Services'} width='200px'/>
       </div>
     </div>
   );
