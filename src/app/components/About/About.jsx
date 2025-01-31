@@ -6,6 +6,9 @@ import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from '../SplitText/SplitText'
 import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
+import Image from "next/image";
+import abt1 from "./img/abt1.png"
+import abt2 from "./img/abt2.png"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -25,10 +28,10 @@ function About() {
   {/* Left Section */}
   <div className="left-sectionabout">
     <div className="image-container1 shineimg">
-      <img src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/about-img-1.jpg" alt="Living Room 1" />
+      <Image src={abt1} alt="Modern living room with stylish furniture, elegant lighting, and a cozy ambiance."/>
     </div>
     <div className="image-container2 shineimg">
-      <img src="https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/about-img-2.jpg" alt="Living Room 2" />
+      <Image src={abt2} alt="Modern modular kitchen with sleek cabinets, smart storage, and a stylish finish."/>
     </div>
   </div>
 
@@ -36,14 +39,13 @@ function About() {
   <div className="right-sectionabout">
     <p>About Us</p>
             <SplitText
-              text="Our passion for design, your"
+              text="We create custom furniture, perfecting "
               delay={50}
+              className='main-decription'
             />
-    <h2 className='about-h2'> <span>vision realized</span></h2>
-    <p className='about-p'>
-      Our dedicated team of designers works closely with you to understand your
-      vision and bring it to life with thoughtful attention to detail. Whether
-      it’s transforming a single room or an entire home.
+    <h2 className='different-color-main-decription'>every corner.</h2>
+    <p className='sub-decription'>
+    At AddWith, we create unique furniture pieces that are ideal for your area. From modular kitchens to whole house makeovers, we realize your idea.
     </p>
     <div className='bottom_content'>
       <div className="bottom1">
@@ -52,7 +54,7 @@ function About() {
       <li><span>✔</span> Client-centered approach</li>
     </ul>
     <div className='button_about'>
-    <Hoverbtn name ={'Read More'}  width='150px'/> 
+      <Hoverbtn name ={'Read More'}  width='150px' route='/aboutus'/> 
     </div>
     </div>
 

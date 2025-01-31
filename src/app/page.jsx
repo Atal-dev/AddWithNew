@@ -20,17 +20,17 @@ export default function Home() {
      <Navbar/>
      <Hero height={"120vh"}>
         <div className="herosection-inner">
-            <h1><FaArrowRightLong /> Addwith Interiors</h1>
+            <h1 className="main-heading"><FaArrowRightLong /> Addwith Interiors</h1>
             <SplitText
-              text="Designing your dream spaces, one room at a time"
+              text="Creating Modular Spaces in Jaipur and Gangapur"
               className="hero-h2"
               delay={50}
             />
             {/* <h2>Designing your dream spaces, one room at a time</h2> */}
-            <p>We specialixe in creating personalized, fuctional, and stylish interiors that reflect your unique vision</p>
+            <p>Create custom furniture, doors, windows, and modular kitchens in Jaipur and Gangapur, Rajasthan. elegant, useful areas with on-site craftsmanship. Makeover your house!</p>
             <div>
-                <Hoverbtn name='Explore More' />
-                <Hoverbtn name='View Projects' />
+                <Hoverbtn name='Contact Us' route="/" />
+                <Hoverbtn name='View Services' />
             </div>
             
         </div>
@@ -39,7 +39,7 @@ export default function Home() {
      <Services/>
      <WhyUs/>
      <Projects/>
-     <OurSkill/>
+     {/* <OurSkill/> */}
      <Reviews/>
      <Footer/>
     </>

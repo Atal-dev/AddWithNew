@@ -9,6 +9,8 @@ import gsapFadeUpAnimation from "../../../gsap/gsapAnimation.js"
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import kitchen from "./img/kitchen.png"
+
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,21 +28,27 @@ const Services = () => {
     const services_itemsData = [
         {
           id: 1,
-          title: 'Architecture',
-          desc: 'Urban Retreat: Modern Design Meets Comfort',
-          image: 'https://www.decorilla.com/online-decorating/wp-content/uploads/2023/12/Modern-interior-design-ideas-2025-by-Decorilla-scaled.jpeg',
+          title: 'Modular Kitchens',
+          desc: 'We create elegant, room-efficient modular kitchens with seamless finishes, high-quality materials, and clever storage to meet your demands.',
+          class: 'service-kitchen',
         },
         {
           id: 2,
-          title: 'Bedroom',
-          desc: 'Luxurious Loft: Industrial Chic For Living',
-          image: 'https://images.unsplash.com/photo-1560185127-6edc48d39a3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+          title: 'Modular Furniture',
+          desc: 'Our modular furniture offers personalized options that precisely match your house and is made with style, functionality, and space efficiency in mind.',
+          class: 'service-furniture',
         },
         {
           id: 3,
-          title: 'Furniture',
-          desc: 'Elegant Dining: Minimalist Furniture Design',
-          image: 'https://images.unsplash.com/photo-1528159460020-d7e47f03b3d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+          title: 'Doors & Windows ',
+          desc: 'Our premium, long-lasting doors and windows combine style and security to improve the appearance and usability of your area.',
+          class: 'service-doors',
+        },
+        {
+          id: 4,
+          title: 'Inplace Design',
+          desc: 'Custom onsite furniture solutions from Inplace Design combine design and accuracy to precisely match the requirements and aesthetic of your space.',
+          class: 'service-inplace',
         },
       ];
       
@@ -51,15 +59,15 @@ const Services = () => {
         <div className='services_itemhead'>
         <h1 className='main-heading'>Our Services</h1>
         <SplitText
-              text="Innovative design services for "
+              text="interior design solutions that are unique to "
               delay={50}
               className="main-decription"
         />
-        <h2 className='different-color-main-decription'>every need </h2>
+        <h2 className='different-color-main-decription'>each area</h2>
         </div>
         
         <div className='services_itemdes sub-decription'>
-          We offer a range of bespoke interior design services tailored to your unique needs. From concept development to final installation.
+        Our specialty is creating high-end doors and windows, modular kitchens, and modular furnishings that are both aesthetically pleasing and useful. Our on-site furniture service guarantees a flawless fit that is expertly crafted to match your area.
         </div>
       </div>
 
@@ -68,12 +76,7 @@ const Services = () => {
         {services_itemsData.map((services_item) => (
           <div
             key={services_item.id}
-            className="services_item shineimg"
-            style={{
-              backgroundImage: `url(${services_item.image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
+            className={`services_item shineimg ${services_item.class} `}
           >
             <div className='transparent'>
                 <div className='transArrow'><FaArrowRight className='icon' />

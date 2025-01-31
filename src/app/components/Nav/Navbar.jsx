@@ -5,15 +5,16 @@ import logo from "./img/logo.png"
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa6";
 import "./Navbar.css";
-import { useRouter } from 'next/navigation'
+
 import Hoverbtn from "../Hoverbtn/Hoverbtn";
 import Navsmall from "./Navsmall";
+import { usePathname } from "next/navigation";
 
 
 
 export default function Navbar() {
-    const router = useRouter()
-    const isActive = (path) => router.pathname == path;
+    const router = usePathname()
+    const isActive = (path) => router == path;
 
     
 
@@ -23,7 +24,7 @@ export default function Navbar() {
      <header className="navbar"> 
         <nav>
             <a href="">
-                <Image  src={logo} alt="addwith"/>
+                <Image src={logo} alt="Addwith-Interiors-Logo"/>
             </a>
             
             <ul>
@@ -31,7 +32,7 @@ export default function Navbar() {
                     <Link href="/" className={isActive('/') ? 'activelink' : ''}>Home</Link>
                 </li>
                 <li>
-                    <Link href="/aboutus" className={isActive('/about-us') ? 'activelink' : ''} >About Us</Link>
+                    <Link href="/aboutus" className={isActive('/aboutus') ? 'activelink' : ''} >About Us</Link>
                 </li>
                 <li>
                     <Link href="/services" className={isActive('/services') ? 'activelink' : ''} >Services</Link>
@@ -39,20 +40,11 @@ export default function Navbar() {
                 <li>
                     <Link href="/projectspage" className={isActive('/projects') ? 'activelink' : ''} >Projects</Link>
                 </li>
-                <li>
-                    <Link href="/" className={isActive('/blog') ? 'activelink' : ''} >Blog</Link>
-                </li>
                 <li className="dropdown">
                     <Link href="/" className={isActive('/page') ? 'activelink' : ''} >Pages <FaChevronDown/> </Link>
                     <ul className="dropdown-element">
                         <li>
-                             <Link href="/">Service Details</Link>
-                        </li>
-                        <li>
-                             <Link href="/">Project Details</Link>
-                        </li>
-                        <li>
-                             <Link href="/">Blog Details</Link>
+                             <Link href="/">Join Us</Link>
                         </li>
                         <li>
                              <Link href="/">Our Team</Link>

@@ -6,6 +6,8 @@
     padding: 20px;
     padding-top: 100px;
     margin: auto ;
+    background: url("./img/abtbg.png");
+    background-size: cover;
 }
 .left-sectionabout{
     width: 45%;

@@ -58,7 +58,7 @@ const TestimonialLayout = () => {
   }, []);
 
   return (
-    <div className="w-full py-2 pb-[150px] flex">
+    <div className="w-full py-2 my-10 pb-[150px] flex">
       <div className="w-full flex flex-col justify-between  md:flex-row ">
         {/* Left side - Image */}
         <div className="w-full h-full testmonialimg">

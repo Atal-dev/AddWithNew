@@ -1,10 +1,19 @@
 .herosection{
     width: 100%;
-    background-color: black;
-    background-image: url("https://demo.awaikenthemes.com/inspaire/wp-content/uploads/2024/11/hero-bg.jpg");
+    background-image: url("./img/hero-bg2.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+.herosection::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:inherit;
+    background-color: #0000006e;
+    z-index: 0;
 }
 .herosection-inner{
     padding: 12% 8%;
@@ -13,7 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.herosection-inner>h1{
+/* .herosection-inner>h1{
     display: flex;
     gap: 5px;
     color: var(--text-color-2);
@@ -21,7 +30,7 @@
     font-weight: 500;
     line-height: 26px;
     align-items: center;
-}
+} */
 .herosection-inner>.hero-h2{
     color: var(--text-color-2);
     font-size: 80px;

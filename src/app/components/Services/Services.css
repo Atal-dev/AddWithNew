@@ -34,7 +34,7 @@
   .services .services_items {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     justify-content: space-between;
     padding: 40px 0;
@@ -42,11 +42,24 @@
   
   .services .services_items .services_item {
     position: relative;
-    height: 200px; 
     border: 1px solid #ddd;
     overflow: hidden;
-    width: 31%;
-    height: 600px;
+    width: 22%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .service-kitchen{
+    background-image: url("./img/kitchen.png");
+  }
+  .service-furniture{
+
+  }
+  .service-doors{
+
+  }
+  .service-inplace{
+    
   }
  
   .services_items .services_item .transparent{

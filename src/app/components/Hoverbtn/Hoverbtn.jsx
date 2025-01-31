@@ -2,10 +2,10 @@ import Link from "next/link";
 import "./Hoverbtn.css"
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export default function Hoverbtn({name , width="180px"}){
+export default function Hoverbtn({name , width="180px", route="/"}){
     return(
         <>
-            <Link href="/" style={{width:width}} className={`coolBeans`}>{name}<FaArrowRightLong /></Link>
+            <Link href={route} style={{width:width}} className={`coolBeans`}>{name}<FaArrowRightLong /></Link>
         </>
     )
 }
