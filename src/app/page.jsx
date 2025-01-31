@@ -6,7 +6,6 @@ import Projects from "./components/Projects/Projects"
 import WhyUs from "./components/WhyUs/Whyus"
 import CursorFollower from "./components/CursorFollower/CursorFollower";
 import About from "./components/About/About";
-import OurSkill from "./components/OurSkill/OurSkill"
 import Reviews from "./components/Reviews/Reviews"
 import Services from "./components/Services/Services"
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -38,7 +37,6 @@ export default function Home() {
      <About/>
      <WhyUs/>
      <Projects/>
-     <OurSkill/>
      <Services/>
      <Reviews/>
      <Footer/>
