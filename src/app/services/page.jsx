@@ -3,7 +3,6 @@ import Hero from '../components/Hero/Hero'
 import Navbar from '../components/Nav/Navbar'
 import AllServices from '../components/Services/AllServices'
 import Whyus from '../components/WhyUs/Whyus'
-import SkillsSection from '../components/OurSkill/OurSkill'
 import Footer from '../Footer/Footer'
 
 function page() {
@@ -17,7 +16,6 @@ function page() {
       </Hero>
       <AllServices/>
       <Whyus/>
-      <SkillsSection/>
       <Footer/>
     </>
   )

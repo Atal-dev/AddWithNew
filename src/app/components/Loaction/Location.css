@@ -1,6 +1,13 @@
-.location_main{
+
+.locaton{
     width: 100%;
     padding:20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.location_main{
+    width: 100%;
+    
     padding-top: 150px;
     display: flex;
     justify-content: center;
@@ -21,15 +28,15 @@
 
 .location_contact{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 
 }
 .location_contact .cont_sec{
     display: flex;
     width: 400px;
     height: auto;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 20px 0;
+    /* margin: 0 auto; */
 } 
 .location_contact .cont_sec .logo{
     height: 60px;

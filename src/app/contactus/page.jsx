@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero'
 import Navbar from '../components/Nav/Navbar'
 import Footer from '../Footer/Footer'
 import Location from '../components/Loaction/Location'
+import ContactForm from '../components/ContactForm/ContactForm'
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
         <h1 className="text-6xl font-bold text-white ">Contact Us</h1>
        </div>
       </Hero>
+      <ContactForm/>
       <Location/>
       <Footer/>
     </>

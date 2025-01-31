@@ -7,6 +7,8 @@ import { IoMdHome } from "react-icons/io";
 function Location() {
   return (
     <>
+    <div className="locaton">
+
       <div className="location_main">
         <div className="location_head">
           <p>Our Contact</p>
@@ -71,6 +73,8 @@ function Location() {
           </div>
         </div>
       </div>
+      </div>
+
     </>
   );
 }
